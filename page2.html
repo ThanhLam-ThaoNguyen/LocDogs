@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Cho Lộc Dogs</title>
+    <title>Trang Web Dành Cho Lộc Dogs</title>
     <style>
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            background-color: #add8e6; /* Màu nền cho trang 2 */
         }
         img {
             width: 200px;
@@ -17,15 +18,15 @@
     </style>
 </head>
 <body>
-    <h1>Nhấn vào một trong hai con chó!</h1>
-    <img src="https://example.com/dog2.jpg" alt="Chó 2" id="dog2" onclick="showMessage('Chó 2 đã được nhấn!')">
-    <img src="https://example.com/dog3.jpg" alt="Chó 3" id="dog3" onclick="showMessage('Chó 3 đã được nhấn!')">
+    <h1>Nhấn Vào 1 Trong 2!</h1>
+    <img src="https://example.com/sticker_dog2.png" alt="Sticker Chó 2" id="dog2" onclick="showMessage('Sticker chó 2 đã được nhấn!')">
+    <img src="https://example.com/sticker_dog3.png" alt="Sticker Chó 3" id="dog3" onclick="showMessage('Sticker chó 3 đã được nhấn!')">
 
     <script>
         function showMessage(message) {
             document.body.innerHTML = `
                 <h1>${message}</h1>
-                <button onclick="goToPage3()">Click</button>
+                <button onclick="goToPage3()">Đi đến trang 3</button>
             `;
         }
 
