@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Dành Cho Lộc Dogs</title>
+    <title>Trang Web Dành Riêng Cho Lộc Dogs</title>
     <style>
         body {
             text-align: center;
@@ -12,22 +12,32 @@
         }
         img {
             width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Tạo hình tròn cho sticker */
             cursor: pointer;
             margin: 10px;
+        }
+        button {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Nhấn vào 1 Trong 3!</h1>
-    <img src="https://example.com/sticker_dog4.png" alt="Sticker Chó 4" id="dog4" onclick="showMessage('Sticker chó 4 đã được nhấn!')">
-    <img src="https://example.com/sticker_dog5.png" alt="Sticker Chó 5" id="dog5" onclick="showMessage('Sticker chó 5 đã được nhấn!')">
-    <img src="https://example.com/sticker_dog6.png" alt="Sticker Chó 6" id="dog6" onclick="showMessage('Sticker chó 6 đã được nhấn!')">
+    <h1>Click!</h1>
+    <img src="https://example.com/sticker_dog4.png" alt="Sticker Chó 4" id="dog4" onclick="showMessage('Gì Ngu Như Chó Vậy!')">
+    <img src="https://example.com/sticker_dog5.png" alt="Sticker Chó 5" id="dog5" onclick="showMessage('Sủa Đi Lộc Dogs!')">
+    <img src="https://example.com/sticker_dog6.png" alt="Sticker Chó 6" id="dog6" onclick="showMessage('Coi Xem Có Cọng Dây Nào Ở Mũi Không!')">
 
     <script>
         function showMessage(message) {
             document.body.innerHTML = `
                 <h1>${message}</h1>
+                <button onclick="goBack()">Quay lại</button>
             `;
+        }
+
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>
