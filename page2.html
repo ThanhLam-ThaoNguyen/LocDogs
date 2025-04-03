@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Dành Cho Lộc Dogs</title>
+    <title>Trang Web Dành Riêng Cho Lộc Dogs</title>
     <style>
         body {
             text-align: center;
@@ -12,26 +12,36 @@
         }
         img {
             width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Tạo hình tròn cho sticker */
             cursor: pointer;
             margin: 10px;
+        }
+        button {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Nhấn Vào 1 Trong 2!</h1>
-    <img src="https://example.com/sticker_dog2.png" alt="Sticker Chó 2" id="dog2" onclick="showMessage('Sticker chó 2 đã được nhấn!')">
-    <img src="https://example.com/sticker_dog3.png" alt="Sticker Chó 3" id="dog3" onclick="showMessage('Sticker chó 3 đã được nhấn!')">
+    <h1>Click!</h1>
+    <img src="https://example.com/sticker_dog2.png" alt="Sticker Chó 2" id="dog2" onclick="showMessage('Ngu Như Dogs Vậy!')">
+    <img src="https://example.com/sticker_dog3.png" alt="Sticker Chó 3" id="dog3" onclick="showMessage('Lộc Bú Cu!')">
 
     <script>
         function showMessage(message) {
             document.body.innerHTML = `
                 <h1>${message}</h1>
-                <button onclick="goToPage3()">Đi đến trang 3</button>
+                <button onclick="goToPage3()">Trang Web Dành Riêng Cho Lộc Dogs</button>
+                <button onclick="goBack()">Quay lại</button>
             `;
         }
 
         function goToPage3() {
             window.location.href = 'page3.html';
+        }
+
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>
