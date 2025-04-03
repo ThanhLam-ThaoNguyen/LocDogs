@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Dành Cho Lộc Dogs</title>
+    <title>Trang Web Dành Riêng Cho Lộc Dogs</title>
     <style>
         body {
             text-align: center;
@@ -12,19 +12,24 @@
         }
         img {
             width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Tạo hình tròn cho sticker */
             cursor: pointer;
+        }
+        button {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Nhấn Vào Đây!</h1>
+    <h1>Click Vào!</h1>
     <img src="https://example.com/sticker_dog1.png" alt="Sticker Chó" id="dog1" onclick="showMessage()">
 
     <script>
         function showMessage() {
             document.body.innerHTML = `
-                <h1>Sticker Lộc Dogs nhấn vào!</h1>
-                <button onclick="goToPage2()">Đi đến trang 2</button>
+                <h1>Ngu Như Dogs Vậy Lộc Bùi!</h1>
+                <button onclick="goToPage2()">Trang Web Dành Riêng Cho Lộc Dogs</button>
             `;
         }
 
