@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Con Lộc Dogs</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lộc Chó nhấn vào đây!</h1>
+    <img src="https://example.com/dog1.jpg" alt="Chó" id="dog1" onclick="showMessage()">
+
+    <script>
+        function showMessage() {
+            document.body.innerHTML = `
+                <h1>Chó đã được nhấn!</h1>
+                <button onclick="goToPage2()">Click</button>
+            `;
+        }
+
+        function goToPage2() {
+            window.location.href = 'page2.html';
+        }
+    </script>
+</body>
+</html>
