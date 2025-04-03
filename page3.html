@@ -24,15 +24,15 @@
 </head>
 <body>
     <h1>Click!</h1>
-    <img src="https://example.com/sticker_dog4.png" alt="Sticker Chó 4" id="dog4" onclick="showMessage('Gì Ngu Như Chó Vậy!')">
-    <img src="https://example.com/sticker_dog5.png" alt="Sticker Chó 5" id="dog5" onclick="showMessage('Sủa Đi Lộc Dogs!')">
-    <img src="https://example.com/sticker_dog6.png" alt="Sticker Chó 6" id="dog6" onclick="showMessage('Coi Xem Có Cọng Dây Nào Ở Mũi Không!')">
+    <button onclick="showMessage('Lại Ngu Rồi!')">Sticker Chó 4</button>
+    <button onclick="showMessage('Sủa Đi Lộc Dogs!')">Sticker Chó 5</button>
+    <button onclick="showMessage('Coi Xem Có Bị Dắt Không!')">Sticker Chó 6</button>
 
     <script>
         function showMessage(message) {
             document.body.innerHTML = `
                 <h1>${message}</h1>
-                <button onclick="goBack()">Quay lại</button>
+                <button onclick="goBack()">Bú Cu</button>
             `;
         }
 
