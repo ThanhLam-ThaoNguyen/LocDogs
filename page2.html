@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cho Lộc Dogs</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 200px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nhấn vào một trong hai con chó!</h1>
+    <img src="https://example.com/dog2.jpg" alt="Chó 2" id="dog2" onclick="showMessage('Chó 2 đã được nhấn!')">
+    <img src="https://example.com/dog3.jpg" alt="Chó 3" id="dog3" onclick="showMessage('Chó 3 đã được nhấn!')">
+
+    <script>
+        function showMessage(message) {
+            document.body.innerHTML = `
+                <h1>${message}</h1>
+                <button onclick="goToPage3()">Click</button>
+            `;
+        }
+
+        function goToPage3() {
+            window.location.href = 'page3.html';
+        }
+    </script>
+</body>
+</html>
