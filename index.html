@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Con Lộc Dogs</title>
+    <title>Trang Web Dành Cho Lộc Dogs</title>
     <style>
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            background-color: #f0e68c; /* Màu nền cho trang chính */
         }
         img {
             width: 200px;
@@ -16,14 +17,14 @@
     </style>
 </head>
 <body>
-    <h1>Lộc Chó nhấn vào đây!</h1>
-    <img src="https://example.com/dog1.jpg" alt="Chó" id="dog1" onclick="showMessage()">
+    <h1>Nhấn Vào Đây!</h1>
+    <img src="https://example.com/sticker_dog1.png" alt="Sticker Chó" id="dog1" onclick="showMessage()">
 
     <script>
         function showMessage() {
             document.body.innerHTML = `
-                <h1>Chó đã được nhấn!</h1>
-                <button onclick="goToPage2()">Click</button>
+                <h1>Sticker Lộc Dogs nhấn vào!</h1>
+                <button onclick="goToPage2()">Đi đến trang 2</button>
             `;
         }
 
